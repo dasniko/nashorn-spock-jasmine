@@ -10,6 +10,20 @@ repositories {
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.4.5"
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
-    //testRuntime "cglib:cglib-nodep:3.1"
-    //testRuntime "org.objenesis:objenesis:2.2"
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir 'node_modules'
+        }
+    }
+}
+
+task npm(type: Exec) {
+    group = "Build"
+    description = "Installs all Node.js dependencies defined in package.json"
+    commandLine = ["npm", "install"]
+    inputs.file "package.json"
+    outputs.dir "node_modules"
 }

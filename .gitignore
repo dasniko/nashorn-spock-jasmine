@@ -2,3 +2,4 @@ nashorn-spock-jasmine.iml
 .idea
 build
 .gradle
+node_modules

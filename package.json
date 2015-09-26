@@ -1,0 +1,13 @@
+{
+  "name": "nashorn-spock-jasmine",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://www.n-k.de",
+  "license": "MIT",
+  "author": {
+    "name": "Niko Köbler"
+  },
+  "dependencies": {
+    "jasmine-core": "2.3.4"
+  }
+}
