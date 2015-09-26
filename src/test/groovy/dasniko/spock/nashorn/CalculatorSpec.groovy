@@ -8,8 +8,7 @@ import spock.lang.Unroll
 class CalculatorSpec extends BaseSpec {
 
     def setup() {
-        def calc = this.class.getResource('/calculator.js').text
-        nashorn.eval(calc)
+        loadJS('/calculator.js')
     }
 
     def "add"() {
