@@ -21,19 +21,19 @@ class CalculatorSpec extends BaseSpec {
     }
 
     @Unroll
-    def "square of #no is #sq"() {
+    def "square of #a is #expected"() {
         when:
-        def result = nashorn.invokeFunction('square', no)
+        def result = nashorn.invokeFunction('square', a)
 
         then:
-        result == sq
+        result == expected
 
         where:
-        no | sq
-        1  | 1
-        2  | 4
-        3  | 9
-        4  | 16
+        a | expected
+        1 | 1
+        2 | 4
+        3 | 9
+        4 | 16
     }
 
 }
