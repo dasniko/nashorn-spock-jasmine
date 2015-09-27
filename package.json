@@ -8,6 +8,7 @@
     "name": "Niko Köbler"
   },
   "dependencies": {
-    "jasmine-core": "2.3.4"
+    "jasmine-core": "2.3.4",
+    "handlebars": "4.0.3"
   }
 }
